@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solutivo</title>
+
+    <!-- Fontes Google - Open Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Link para icons -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-querry.css">
+</head>
+<body onresize="mudarTamanho()">
+
+    <section class="main">
+        
+        <div class="layer"></div>
+
+        <div class="center">
+
+            <header>
+
+                <div class="icones">
+
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+            
+                </div>
+
+                <div class="clear"></div>
+
+                <div class="logo">
+                    <img src="./images/SOLUTIVO.png" alt="logo">
+                </div>
+
+                <nav class="desktop">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="">Portfólio</a></li>
+                        <li><a href="./sobre.html">Sobre</a></li>
+                        <li><a href="">Contato</a></li>
+                    </ul>
+                </nav>
+
+                <i class="fa fa-bars" onclick="clicar()"></i>
+                    <ul>
+
+                <div class="clear"></div>
+
+            </header> 
+
+            <nav class="mobile">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="">Portfólio</a></li>
+                    <li><a href="./sobre.html">Sobre</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </nav>
+            
+            <div class="conteudo-header">
+
+                <h2>Sobre a <span>Solutivo</span></h2>
+                
+                <p>
+                    Eu sou Fernando Ribeiro, fundador da SOLUTIVO. <br><br>
+                    Possuo uma sólida experiência como analista de dados financeiros, pois atuo na repressão à lavagem de dinheiro e
+                    já desempenhei um papel crucial como contador público no estado de Pernambuco, onde mergulhei profundamente na análise de dados orçamentários, 
+                    fornecendo insights valiosos para informar decisões estratégicas.
+
+                    Minha paixão pela análise de dados me levou a buscar uma pós-graduação tanto em Contabilidade Pública quanto em Ciência de Dados, 
+                    expandindo meu conjunto de habilidades e conhecimentos para além das fronteiras tradicionais. Agora, na Solutivo, estou focados em oferecer 
+                    soluções de software sob medida para atender às necessidades específicas de nossos clientes, além de serviços especializados em extração, 
+                    limpeza e visualização de dados.
+                </p>
+
+                <p>
+                    Meu objetivo é simplificar o processo de transformar dados brutos em insights acionáveis, permitindo que meus clientes tomem decisões informadas e 
+                    estratégicas para impulsionar o crescimento de seus negócios. 
+                    Combinando minha experiência em ferramentas como Power BI, Python e outras tecnologias de análise de dados, desenvolvi um portfólio diversificado de 
+                    ferramentas poderosas, projetadas para atender às demandas dinâmicas do mercado atual.                    
+                </p>
+
+               
+
+                <br>
+                <a href="">Saiba Mais!</a>
+
+                <br><br>
+
+            </div> <!-- Conteúdo header-->
+        </div> <!-- Center -->
+    </section> <!-- Main -->
+
+   
+
+    <footer>
+
+        <p>Todos os direitos reservados a Fernando Ribeiro</p>
+        
+    </footer>
+
+    <script>
+        function clicar() {
+            var menuMobile = document.querySelector("nav.mobile");
+    
+            if (menuMobile.style.display === 'block') {
+
+                menuMobile.style.display = 'none';
+
+            } else {
+
+                menuMobile.style.display = 'block';
+            }
+        }
+
+        function mudarTamanho(){
+
+            var menuMobile = document.querySelector("nav.mobile");
+
+            if(window.innerWidth >= 568){
+
+                menuMobile.style.display = 'none';
+            }
+        }
+</script>
+</body>
+</html>

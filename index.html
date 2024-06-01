@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solutivo</title>
+
+    <!-- Fontes Google - Open Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Link para icons -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-querry.css">
+</head>
+<body onresize="mudarTamanho()">
+
+    <section class="main">
+        
+        <div class="layer"></div>
+
+        <div class="center">
+
+            <header>
+
+                <div class="icones">
+                       
+
+                        <i class="fa fa-instagram" aria-hidden="true"></i>                                   
+                    
+            
+                </div>
+
+                <div class="clear"></div>
+
+                <div class="logo">
+                    <img src="./images/SOLUTIVO.png" alt="logo">
+                </div>
+
+                <nav class="desktop">
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="">Portfólio</a></li>
+                        <li><a href="./sobre.html">Sobre</a></li>
+                        <li><a href="">Contato</a></li>
+                    </ul>
+                </nav>
+
+                <i class="fa fa-bars" onclick="clicar()"></i>
+                    <ul>
+
+                <div class="clear"></div>
+
+            </header> 
+
+            <nav class="mobile">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="">Portfólio</a></li>
+                    <li><a href="./sobre.html">Sobre</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </nav>
+            
+            <div class="conteudo-header">
+
+                <h2>Bem-vindo(a) à <span>Solutivo</span></h2>
+                
+                <p>Soluções corporativas de desenvolvimento de software, extração, análise, limpeza, transformação e visualização de dados.</p>
+                <p>
+                    Aqui, aproveitamos ao máximo o potencial dos seus dados.
+
+                </p>
+
+                <a href="./sobre.html">Saiba Mais!</a>
+
+            </div> <!-- Conteúdo header-->
+        </div> <!-- Center -->
+    </section> <!-- Main -->
+
+    
+
+    <section class="parallax">
+
+        <div class="overlay-parallax"></div>
+        <div class="center">Sobre o <span>Portfólio</span>
+
+        <p>
+                    Ao explorar o portfólio, você encontrará uma variedade de projetos inovadores e soluções eficazes que demonstram o meu compromisso 
+                    com a excelência e a inovação.
+                    <br> <br>
+                    Dentre os vídeos ou imagens do portfólio encontram-se projetos feitos para clientes e que atendem necessidades específicas
+                    de acordo com o pedido, no entanto, todos os dados aqui expostos foram despersonificados e servem apenas para demonstração da ferramenta.
+                    <br>    <br>                
+                    Estou ansiosos para colaborar com você e ajudá-lo a aproveitar ao máximo o potencial de seus dados.
+        </p>
+
+        
+
+        </div> <!-- Center -->
+
+    </section> <!-- Parallax -->
+
+    <section class="final-section">
+
+        <div class="center">
+
+            <div class="w50 contato">
+
+                <h2> <div class="border-efeito"></div> Entre em contato</h2>
+                
+                <form>
+
+                    <input type="text" placeholder="Insira seu nome."></input>
+                    <input type="text" placeholder="Insira seu email.">
+                    <textarea placeholder="Sua mensagem..."></textarea>
+                    <input type="submit" value="Enviar">
+
+                </form>
+
+            </div> <!-- w50 contato -->
+
+            <div class="w50 time">
+
+                <h2> <div class="border-efeito">  </div> Conheça nosso time</h2>
+
+                <div class="w50 equipe-single">
+
+                    <div class="topo-box-usuario">
+                        
+                        <div class="box-avatar">        <img src="./images/fernando.png" alt="">                               </div>
+
+                        <div class="info-usuario">
+                            <p class="nome">Fernando Ribeiro</p>
+                            <p class="cargo">Fundador</p>
+                        </div> <!-- info-usuario -->
+
+                    </div> <!-- topo-box-usuario -->
+
+                    <div class="descricao-usuario-box">
+
+                        <p>Bacharel em Cicências contábeis. <br> Pós-graduado em Contabilidade Pública. <br> Pós-graduado em Ciência de dados. <br>
+                        Diversos cursos na área de dados entre ferramentas e especializações. (Python, Power BI, Qlik Sense, i2 Analyst's Notebook e outros.) </p>
+
+                    </div> <!-- descricao-usuario-box -->
+
+                </div> <!-- w-50 equipe single -->         
+                                
+
+                <div class="clear"></div>
+
+            </div> <!-- w50 equipe - time -->
+        
+            <div class="clear"></div>
+
+        </div> <!-- center -->
+
+    </section> <!-- final-section -->
+
+    <footer>
+
+        <p>Todos os direitos reservados a Fernando Ribeiro</p>
+        
+    </footer>
+
+    <script>
+        function clicar() {
+            var menuMobile = document.querySelector("nav.mobile");
+    
+            if (menuMobile.style.display === 'block') {
+
+                menuMobile.style.display = 'none';
+
+            } else {
+
+                menuMobile.style.display = 'block';
+            }
+        }
+
+        function mudarTamanho(){
+
+            var menuMobile = document.querySelector("nav.mobile");
+
+            if(window.innerWidth >= 568){
+
+                menuMobile.style.display = 'none';
+            }
+        }
+</script>
+</body>
+</html>
